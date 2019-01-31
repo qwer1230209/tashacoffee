@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--퀵메뉴추가,첫화면슬라이드추가-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tasha Coffee</title>
+    <script src="jquery-2.2.4.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script src="jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <script>
+        $(function() {
+            $("#box3 a").click(function() {
+                $("#modal").addClass("active");
+            });
+            $("#modal button").click(function() {
+                $("#modal").removeClass("active");
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <div id="container" class="clearfix">
+        <div id="modal">
+            <div class="body">
+                <div class="img">
+                    <img src="img/menu_cafe_02-1-600x500%20copy.png" alt="">
+                </div><button class="button" id="btn-close">X</button>
+            </div>
+        </div>
+
+        <header class="clearfix">
+            <a class="logo" href=""><img src="img/logo.png" alt=""></a>
+         
+            <div id="navigaition">
+                <ul>
+                    <li><a href="#box2">About</a></li>
+                    <li><a href="#box3">Menu</a></li>
+                    <li><a href="#box4">Location</a></li>
+                    <li><a href="">Event</a></li>
+                </ul>
+
+            </div><!--                ------------------------------>
+             <button class="hamburger">&#9776;</button>
+  <button class="cross">&#735;</button>
+
+<div class="menuh">
+  <ul>
+    <a href="#"><li>About</li></a>
+    <a href="#"><li>Menu</li></a>
+    <a href="#"><li>Location</li></a>
+    <a href="#"><li>EVENT</li></a>
+  </ul>
+</div> 
+           
+<!--           ---------------------------------->
+        </header>
+        <div class="wrap clearfix">
+            <section class="box1">
+                <div id="fade">
+                    <div class="fade_container">
+                        <img class="active" src="img/img1.jpg" alt="image1" />
+                        <img src="img/slide2.JPG" alt="image2" />
+                        <img src="img/141.jpg" alt="image3" />
+                        <div class="box1circle">
+                            <h1> &nbsp;Tasha <br>Coffee</h1>
+                            <p class="arrow">▼</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section id="box2">
+                <div class="decobd"></div>
+                <h1>
+                    Tasha Coffee?
+                </h1>
+
+
+                <div>
+                    <ul class="box2img clearfix">
+                       
+                        <li><img src="img/box2img1.PNG" alt="">
+                            <div class="decobd2"></div>
+                            <div class="sub">
+                                <p>" 매일 아침 공급되는 <br>
+                                    <span>신선한 케냐산 원두</span>로 <br>
+                                    만들어지는 커피 "</p>
+                            </div>
+                        </li>
+                        <li><img src="img/box2img2.PNG" alt="">
+                            <div class="decobd2"></div>
+                            <div class="sub">
+                                <p>" 유기농으로 재배한 <br>
+                                    <span>계절별 과일</span>로 만드는 <br>
+                                    ‘Tasha coffee’ 만의 <br>
+                                    생과일 주스 "</p>
+                            </div>
+                        </li>
+                        <li><img src="img/box2img3.PNG" alt="">
+                            <div class="decobd2"></div>
+                            <div class="sub">
+                                <p>" 하루 두 번 <br>
+                                    <span>머신 클리닝 시스템</span><br>
+                                    늘 청결한 환경에서 <br>
+                                    제조되는 음료 "</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box2text">
+
+
+
+                </div>
+
+
+            </section>
+            <section id="box3">
+                <div class="decobd"></div>
+                <h1>Tasha Coffee's Menu</h1>
+                
+                <ul>
+                <li class="decobd3"></li>
+                <li>
+                <p>매일 아침 공급되는 신선한 원두로 만들어지는 커피와 <br>
+                    유기농 재배 과일을 갈아만든 생과일 음료, <br>
+                    커피와 함께 곁들이는 디저트 까지 <br>
+                    <br>
+                    ‘Tasha coffee’의 메뉴들을 만나보세요.</p></li>
+               <li> <a class="button003"> <button>자세히 보기</button></a></li>
+          </ul>  </section>
+            <section id="box4">
+                <h1>Tasha Coffee's Space</h1>
+                <p>소중한 사람들과 함께하는 <br>
+                    아늑하고 편안한 공간 ‘Tasha Coffee’ <br>
+                    근처에 있는 Tasha Coffee 매장을 찾아보세요.
+                </p><a href="http://map.daum.net/?urlX=867681&urlY=652840&urlLevel=3&itemId=2104118532&q=%ED%83%80%EC%83%A4%EC%BB%A4%ED%94%BC&srcid=2104118532&map_type=TYPE_MAP" class="button004" target="_blank"> <button>매장 찾기</button></a>
+            </section>
+
+
+        </div>
+        <footer>
+            <div class="footer_wrap">
+                <section class="sns"><i class="fab fa-facebook-square"></i><i class="fab fa-instagram"></i><i class="fab fa-youtube-square"></i><i class="fab fa-twitter-square"></i></section>
+                <section class="text">
+                    <p>상품공시실 | 가격공시실 | 경영공시실 | 방카슈랑스수수료율 | 보호금융상품등록부 | 바로가기
+                        <br> <br>
+                        대표전화 1588-5580 04542 서울특별시 중구 삼일대로 358(을지로2가 사업자등록번호 : 104-81-28992
+                        Copyright(C) 2001 SHINHAN LIFE INSURANCE All rights reserved.</p>
+                </section>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
